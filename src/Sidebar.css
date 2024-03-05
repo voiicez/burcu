@@ -1,0 +1,30 @@
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    height: 100%; 
+    width: 50px; 
+    background:#0c0b0b; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .sidebar-item {
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg); 
+    color: white;
+    text-decoration: none;
+    margin: 10px 0; 
+  }
+  
+  .nokta{
+width: 10px;
+height: 10px;
+  }
+  
+  
+  
