@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar'; 
 import './App.css'; 
 import ImageGallery from './ImageGallery';
-import logo from './img/logo7.png';
+import logo from './img/logo8.png';
 import Afraid from './img/afraid.png';
 import Crow from './img/crow.png';
 import Requiem from './img/requiem.png';
