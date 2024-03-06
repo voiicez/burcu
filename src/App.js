@@ -15,6 +15,7 @@ import Contact from './Contact'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 const images = [
   { src: Waltz, alt: 'Waltz'},
   { src: Requiem, alt: 'Requiem'},
@@ -36,6 +37,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <SpeedInsights/>
+          <Analytics/>
           <Link to="/">
             <img src={logo} alt="Logo" className="App-logo" />
           </Link>
