@@ -12,6 +12,7 @@ import Ache from './img/acheinsecret.png';
 import Wattlebird from './img/wattlebird.png'
 import Waltz from './img/waltz.png'
 import Contact from './Contact'
+import Design from './Design';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -51,6 +52,7 @@ function App() {
             </div>
           } />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/design" element={<Design />} />
         </Routes>
       </div>
     </Router>

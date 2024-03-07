@@ -1,7 +1,7 @@
 // Sidebar.js
 
 import React from 'react';
-import './Sidebar.css'; // Sidebar için özel CSS dosyası
+import './Sidebar.css'; 
 import nokta from './img/nokta.png'
 
 const Sidebar = () => {

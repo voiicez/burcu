@@ -21,3 +21,6 @@
     text-decoration: none;
     padding: 0 15px;
 }
+.main-nav a.active{
+    color: red; 
+}    
