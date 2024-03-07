@@ -20,10 +20,10 @@ import Sidebar from './Sidebar';
 const images = [
   { src: Accesso, alt: 'Sofiasorrize'},
   { src: Box, alt: 'Box Design'},
-  { src: Campus, alt: 'Box Design'},
+  { src: Campus, alt: 'Campus'},
   { src: Samsung, alt: 'Samsung'},
   { src: Card, alt: 'Love Card'},
-  { src: Coffee, alt: 'Identity'},
+  { src: Coffee, alt: 'Awaken'},
   { src: Program, alt: 'BOVA'},
   { src: Car, alt: 'Cat'},
   { src: Story, alt: 'Story'},

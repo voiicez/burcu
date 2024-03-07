@@ -18,10 +18,24 @@ import Self from './img/Illustration/self.jpg'
 import Tears from './img/Illustration/tears.jpg'
 import Contact from './Contact'
 import Design from './Design';
+
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
+import BirdDetail from './image/WattlebirdDetail';
+import CarDetail from './image/CarDetail';
+import CrowDetail from './image/CrowDetail';
+import RequiemDetail from './image/RequiemDetail';
+import StoryDetail from './image/StoryDetail';
+import TavsiDetail from './image/TavsiDetail';
+import TearsDetail from './image/TearsDetail';
+import WaltzDetail from './image/WaltzDetail';
+import CampusDetail from './image/CampusDetail';
+import AccessoDetail from './image/AccessoDetail';
+import AcheInSecretDetail from './image/AcheInSecretDetail';
+import AfraidDetail from './image/AfraidDetail';
+import AwakenDetail from './image/AwakenDetail';
 const images = [
   { src: Waltz, alt: 'Waltz'},
   { src: Requiem, alt: 'Requiem'},
@@ -62,6 +76,19 @@ function App() {
           } />
           <Route path="/contact" element={<Contact />} />
           <Route path="/design" element={<Design />} />
+          <Route path="/image/wattlebird" element={<BirdDetail />} />
+          <Route path="/image/cat" element={<CarDetail />} />
+          <Route path="/image/crow" element={<CrowDetail />} />
+          <Route path="/image/requiem" element={<RequiemDetail />} />
+          <Route path="/image/story" element={<StoryDetail />} />
+          <Route path="/image/echoes of existence" element={<TavsiDetail />} />
+          <Route path="/image/tears" element={<TearsDetail />} />
+          <Route path="/image/waltz" element={<WaltzDetail />} />
+          <Route path="/image/campus" element={<CampusDetail />} />
+          <Route path="/image/sofiasorrize" element={<AccessoDetail />} />
+          <Route path="/image/ache in secret" element={<AcheInSecretDetail />} />
+          <Route path="/image/afraid" element={<AfraidDetail />} />
+          <Route path="/image/awaken" element={<AwakenDetail />} />
         </Routes>
       </div>
     </Router>

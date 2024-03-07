@@ -1,0 +1,19 @@
+.image-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+  }
+  
+  .image-detail-container img {
+    max-width: 68%; 
+    height: auto;
+    max-height: 100%; 
+  }
+  .image-description {
+    color: #fff;
+    margin-top: 20px; 
+    text-align: center; 
+    max-width: 90%; 
+  }
