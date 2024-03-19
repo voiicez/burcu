@@ -7,9 +7,9 @@ import nokta from './img/nokta.png'
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <a href="#" className="sidebar-item">ABOUT</a>
+      <a href="/about" className="sidebar-item">ABOUT</a>
       <img src={nokta} className='nokta'></img>
-      <a href="contact" className="sidebar-item">CONTACT</a>
+      <a href="/contact" className="sidebar-item">CONTACT</a>
     
       
       {/* Diğer menü öğeleri */}

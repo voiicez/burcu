@@ -11,6 +11,7 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
+    
   }
   
   .sidebar-item {
@@ -19,6 +20,7 @@
     color: white;
     text-decoration: none;
     margin: 10px 0; 
+    z-index: 5;
   }
   
   .nokta{

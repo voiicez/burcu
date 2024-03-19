@@ -6,6 +6,8 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+  const [feedbackMessage, setFeedbackMessage] = useState(''); 
+  const [feedbackMessageType, setFeedbackMessageType] = useState(''); 
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,9 +20,13 @@ const Contact = () => {
     .then(
       () => {
         console.log('SUCCESS!');
+        setFeedbackMessage('Your message has been sent successfully!');
+        setFeedbackMessageType('success'); 
       },
       (error) => {
         console.log('FAILED...', error.text);
+        setFeedbackMessage('Failed to send the message. Please try again later.'); 
+        setFeedbackMessageType('error'); 
       },
     );
     setName('');
@@ -92,7 +98,11 @@ const Contact = () => {
   </div>
   <button type="submit" value="Send">SEND</button>
 </form>
-
+{feedbackMessage && (
+        <div className={`feedback-message ${feedbackMessageType}`}>
+          {feedbackMessage}
+        </div>
+      )}
     </div>
   );
 };

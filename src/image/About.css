@@ -1,0 +1,38 @@
+/* Ensure a positioned ancestor for absolute positioning context; this could be a direct parent or another ancestor */
+.positioned-ancestor {
+  position: relative; /* Or 'absolute' if necessary for your layout */
+}
+
+/* Adjust the container positioning */
+.bimage-detail-container {
+  position: absolute;
+  top: 0; /* Overlap the top */
+  left: 16%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 0; /* Ensure the image is above other content */
+}
+
+.bimage-detail-container img {
+  max-width: 80%; /* Example width, adjust as needed */
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .bimage-detail-container img {
+    max-width: 95%; /* Adjust for smaller screens */
+  }
+}
+.image-detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+
+.image-detail-container img {
+  max-width: 68%; 
+  height: auto;
+  max-height: 100%; 
+}

@@ -19,6 +19,7 @@ import Tears from './img/Illustration/tears.jpg'
 import Contact from './Contact'
 import Design from './Design';
 
+import About from './image/About'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -76,6 +77,7 @@ function App() {
           } />
           <Route path="/contact" element={<Contact />} />
           <Route path="/design" element={<Design />} />
+          <Route path="/about" element={<About />} />
           <Route path="/image/wattlebird" element={<BirdDetail />} />
           <Route path="/image/cat" element={<CarDetail />} />
           <Route path="/image/crow" element={<CrowDetail />} />
